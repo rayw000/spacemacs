@@ -1472,7 +1472,7 @@ discovery."
   "Declare a single layer with spec LAYER-SPECS.
 Set the variable `configuration-layer--declared-layers-usedp' to control
 whether the declared layer is an used one or not.
-If `SKIP-LAYER-DEPS' is non nil then skip loading of layer dependenciesl"
+If `SKIP-LAYER-DEPS' is non nil then skip loading of layer dependencies."
   (let* ((layer-name (if (listp layer-specs) (car layer-specs) layer-specs))
          (layer (configuration-layer/get-layer layer-name))
          (usedp configuration-layer--declared-layers-usedp))
